@@ -1,0 +1,273 @@
+.lightning-studio{
+	color : blue;
+}
+html{
+  width: 100%;
+}
+:host {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+.grid-container {
+  display: flex;
+  flex-direction: row;
+}
+.insid-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+.imp{
+  display: grid;
+  grid-template-columns: auto;
+}
+.tab-headers{
+	color: red;
+}
+.text-box{
+  /*margin: auto;*/
+  height: 250px;
+  width: 100%;
+  border: 2px solid black;
+  align-items: center;
+   padding: 15px;
+   resize: vertical;
+   overflow: auto;
+}
+/*.text-box div{
+  padding: 15px;
+  resize: vertical;  
+  overflow: auto;  
+}*/
+.underLine{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.reading{
+  display:inline-block;
+  border: none; 
+  text-align: left; 
+  width: 60px;
+}
+.tread-brake-label{
+  margin-left: 65%; 
+  font-size: 14px;
+}
+.commends { 
+  width: 100%; 
+  border: 2px solid black; 
+  margin-top: 5px; font-size: 16px; 
+  padding-left: 5px; padding-top: 5px; 
+  font-weight: 700; 
+  resize: vertical; /* Allows the user to resize the box vertically */ 
+  overflow: auto; /* Adds scrollbars when content overflows */ 
+  min-height: 60px; /* Minimum height of the box */ 
+}
+.last{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.DOTandState{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.maintian{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+.maintian td {
+    /*border: 1px solid #ddd;*/
+    padding: 8px;
+    text-align: left;
+  }
+
+/*------------for table------*/
+.table-containor{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: middle;
+}
+.tab-headers th { 
+    padding: 10px 10px 10px 4px;
+    font-weight: bold;
+    text-align:start;
+}
+.data-row td {
+    vertical-align: top;
+}
+.data-row img {
+    vertical-align: middle; /* Centers the image vertically */
+}
+.data-row .lightning-input {
+    vertical-align: middle; /* Centers the image vertically */
+}
+.data-row label {
+    vertical-align: middle; /* Centers the text vertically */
+}
+/*---------------------------------------------------------------------------------*/ 
+/*.container { 
+  padding: 16px; 
+  } */
+.responsive-table,.responsive-table1 { 
+    width: 100%; 
+    border-collapse: collapse; 
+    } 
+.responsive-table td,
+.responsive-table th { 
+      padding: 3px; 
+      text-align: left; 
+      } 
+
+.responsive-table1 td,
+.responsive-table1 th { 
+      padding: 3px; 
+      text-align: left; 
+      } 
+.responsive-table img { 
+  vertical-align: middle; }
+
+  .responsive-table1 img { 
+  vertical-align: middle; } 
+
+.center-text { 
+  text-align: center; 
+  } 
+.label-bold { 
+  font-weight: 600; 
+} 
+.label-extra-bold { 
+  font-weight: 800; 
+} 
+@media (max-width: 798px) { 
+ 
+  .slds-modal__container {
+        width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
+        margin: 0; /* Remove margins */
+        padding: 0; /* Remove padding */
+        border-radius: 0; /* Remove rounded corners */
+    }
+
+    .slds-modal__content {
+        overflow-y: auto;
+        max-height: calc(100vh - 100px); /* Adjust for header/footer */
+    }
+.responsive-table td{
+ display: flex;
+    align-items: center; /* Vertically align image and text */
+    border: none;
+    padding-top: 8px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.responsive-table1 tr{
+ display: flex;
+    align-items: center; /* Vertically align image and text */
+    border: none;
+    padding-top: 8px;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+  .grid-container{
+    flex-direction: column;
+  }
+  .insid-grid{
+  grid-template-columns: 100%;
+}
+  .mobile-responsive-input{
+    display: block;
+    width: 100%; /* Make the input take up the full width */
+  }
+  .cancel-button {
+            display: none;
+        }
+  .filledTo100PSI{
+    margin-left:0px;
+  }
+
+  .tread-brake-label {
+    margin-left: 0;
+    text-align: center;
+    display: block;
+  }
+
+
+  }
+
+/*----------------------------------------------------Edit Button-------------------------------------------------------------*/
+.input-tire{
+  margin: 0;
+  display:inline-block;
+  border: none; 
+  text-align: center; 
+  width: 50px;
+}
+
+.shop-table { 
+  width: 100%; border-collapse: collapse; 
+  } 
+.shop-table td { 
+  padding: 8px; 
+  } 
+/*.shop-table td span.mobile-responsive-input { 
+  display: none;
+  }*/
+
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .responsive-table5 {
+      display: block;
+    }
+    
+    .responsive-table5 td {
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 10px 5px;
+    }
+
+    .responsive-table5 tr {
+      display: block;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .responsive-table5 td[data-label] {
+      padding: 5px 10px;
+      border-bottom: none;
+    }
+    
+    .shop-table td { 
+      display: block; 
+      width: 100%; 
+      box-sizing: border-box; 
+    } 
+    .shop-table td span.mobile-responsive-input { 
+      display: inline; font-weight: bold; 
+      } 
+    .shop-table td span.mobile-responsive-input + lightning-input { 
+      margin-top: 0; width: 100%;
+    }
+    .glad{
+      margin-top: 3px;
+    }
+    .container{
+      z-index: 0;
+    }
+
+  }
+.sticky-buttons {
+    position: fixed; /* Makes the element fixed on the viewport */
+    bottom: 3px;    /* Distance from the bottom of the viewport */
+    right: 10px;     /* Distance from the right of the viewport */
+    z-index: 1000;   /* Ensures it appears above other elements */
+    background-color: white; /* Optional: to ensure visibility */
+    padding: 10px;   /* Optional: for spacing around the buttons */
+    border-radius: 5px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
+}
